@@ -1,0 +1,16 @@
+Work on writing code with solid design principles in mind
+practice git branching
+practice webpack
+work on problem solving skill
+
+Game logic pseudo code
+Movements
+On the click of a button, check if play is underway
+	IF it is not 
+		IF it is not the clickers turn
+			return 
+		ELSE highlight possible moves
+	ELSE 
+		IF the clicked element is a possible move
+			move the piece to there
+		ELSE return
