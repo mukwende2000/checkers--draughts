@@ -1,16 +1,30 @@
 Work on writing code with solid design principles in mind
 practice git branching
-practice webpack
+practice webpack 
 work on problem solving skill
+
+what you have to consider to solve the problem
+Is the clicked element a king or regular piece
+Is the default possible move occupied or not
+   If it is, is the next possible move occupied
+
+
 
 Game logic pseudo code
 Movements
-On the click of a button, check if play is underway
-	IF it is not 
-		IF it is not the clickers turn
-			return 
-		ELSE highlight possible moves
-	ELSE 
-		IF the clicked element is a possible move
-			move the piece to there
-		ELSE return
+FOR PLAYER ONE
+when a player clicks on a piece
+determine the possible moves and highlight them
+ get the equivalent piece from the array
+ store it into a variable
+ go into the prev row depending on the player playing
+ IF the row of the stored piece is odd
+  IF the stored piece is the first in its row
+   possibleMove = the first square of the previous row
+  ELSE possibleMove = equivalent index of the stored piece - 1 and equivalent index of the stored piece in the the prev row
+ ELSE IF the row of the stored piece is even
+  IF the stored piece is the first in its row
+   possibleMoves = equivalent index of the stored piece and equivalent index of the stored piece + 1 in the the prev row
+when a player clicks on a possible move
+move the piece clicked from its current position to the possible move clicked
+
